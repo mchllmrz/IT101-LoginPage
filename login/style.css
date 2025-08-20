@@ -1,0 +1,159 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Kanit", sans-serif;
+      background: linear-gradient(135deg, #6a11cb,  #00912cd2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      height: 1150px;
+      max-width: 850px;
+    }
+
+    .card {
+      width: 100%;
+      min-height: 750px;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 1s ease-in-out;
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    form {
+      position: absolute;
+      width: 100%;
+      min-height: 750px;
+      height: 100%;
+      background: aliceblue;
+      border-radius: 20px;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    form h2 {
+      margin-bottom: 40px;
+      color: rgb(86, 84, 146);
+      font-size: 5rem;
+    }
+
+    /* Input fields */
+    .input-field {
+      max-width: 700px;
+      width: 100%;
+      height: 90px;
+      background: rgba(128,128,128,0.2);
+      margin: 10px 0;
+      border-radius: 35px;
+      display: grid;
+      font-size: 1.6rem;
+      grid-template-columns: 15% 85%;
+      padding: 0 15px;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .input-field:hover {
+      background: rgba(211, 197, 225, 0.3);
+    }
+
+    .input-field i {
+      color: rgb(97, 88, 134);
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .input-field input {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 2rem;
+      color: rgb(53, 57, 75);
+      font-weight: 500;
+    }
+
+    /* Buttons */
+    .btn {
+      width: 320px;
+      height: 80px;
+      font-size: 1.5rem;
+      border-radius: 65px;
+      margin-top: 30px;
+      border: none;
+      background: rgb(131, 126, 196);
+      color: white;
+      font-weight: 600;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+
+    .btn:hover {
+      background: rgb(79, 42, 158);
+    }
+
+    /* button to switch between login and signup */
+    .switch-btn {
+      background: none;
+      border: none;
+      color: rgb(201, 47, 0);
+      font-size: 1.2rem;
+      margin-top: 40px;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    /* Social icons */
+    .social-text {
+      margin: 25px 0 15px;
+      font-size: 2rem;
+      color: rgb(53, 57, 75);
+    }
+
+    .social-apps {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icon {
+      height: 56px;
+      width: 55px;
+      border: 1px solid rgb(39, 15, 66);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      margin: 0 0.4rem;
+      color: rgb(116, 70, 180);
+      transition: all 0.3s;
+    }
+
+    .social-icon:hover {
+      background: rgb(79, 42, 158);
+      color: rgb(124, 255, 80);
+    }
+
+    /* Signup form on the back */
+    .signup-form {
+      transform: rotateY(180deg);
+    }
